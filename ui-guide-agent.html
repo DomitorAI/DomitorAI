@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UiGuide Agent — AI in-app help for WPF, WinForms, Blazor and web apps, learned from your code</title>
+<meta name="description" content="UiGuide Agent is an AI help agent you add to any application with a UI (WPF, WinForms, Blazor, React, Vue, Angular…). It learns your app from your source code and guides users step by step, with your own LLM and server.">
+<link rel="canonical" href="https://domitorai.github.io/DomitorAI/ui-guide-agent.html">
+<meta property="og:title" content="UiGuide Agent — your users ask, your app answers">
+<meta property="og:description" content="AI in-app help learned from your source code: WPF, WinForms, Blazor and any web framework. Your LLM, your server, your data.">
+<meta property="og:url" content="https://domitorai.github.io/DomitorAI/ui-guide-agent.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/DomitorAI/ui-guide-agent/main/assets/banner.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "UiGuide Agent",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, Linux (server); any current browser (web)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "An AI help agent for applications with a user interface: it learns the app from its source code at every build and guides users step by step in their language, using your own OpenAI-compatible LLM and server.",
+  "url": "https://domitorai.github.io/DomitorAI/ui-guide-agent.html",
+  "codeRepository": "https://github.com/DomitorAI/ui-guide-agent",
+  "author": { "@type": "Organization", "name": "DomitorAI", "url": "https://github.com/DomitorAI" }
+}
+</script>
+</head>
+<body>
+<main>
+  <nav><a href="./">DomitorAI</a> › UiGuide Agent</nav>
+  <h1>UiGuide Agent</h1>
+  <p class="lead">Your users ask. Your app answers. No documentation to write.</p>
+
+  <p><img src="https://raw.githubusercontent.com/DomitorAI/ui-guide-agent/main/assets/banner.png" alt="UiGuide Agent banner"></p>
+
+  <p><strong>UiGuide Agent</strong> is an AI help agent you add to any application with a user interface. Your users ask
+    <em>“how do I…?”</em> inside your app and get concrete steps — which button to press, what happens next — in their
+    language, starting from the screen they are on.</p>
+
+  <h3>Why</h3>
+  <ul>
+    <li><strong>No help pages to write:</strong> it learns your application from your source code — windows, controls,
+      texts, which button opens which screen — automatically, at every build.</li>
+    <li><strong>Never out of date:</strong> change the UI, rebuild, and the answers follow the new version.</li>
+    <li><strong>The exact buttons, in the user's language:</strong> the answer follows the language of the question and
+      names every button exactly as it appears on screen — also when the user switches the application's language.</li>
+    <li><strong>Starts where the user is:</strong> it sees the current screen and skips the steps already done.</li>
+    <li><strong>Minutes to add:</strong> one NuGet package (WPF, WinForms, Blazor) or one npm package and one line in your
+      bundler's configuration — no code. Applications you cannot change are covered by the Companion.</li>
+    <li><strong>Your LLM, your server, your data:</strong> any OpenAI-compatible endpoint (LiteLLM, vLLM, Ollama, OpenAI);
+      besides the question, only UI structure and labels leave the app — never the values in fields, never passwords.</li>
+    <li><strong>Safe answers:</strong> the assistant never gives links, downloads or commands, never asks for passwords,
+      codes or card details, and ignores instructions hidden in texts shown by your application.</li>
+  </ul>
+
+  <h3>Works with</h3>
+  <table>
+    <tr><th>Application</th><th>How it is added</th></tr>
+    <tr><td>WPF, WinForms (.NET 8+, .NET Framework 4.8)</td><td>NuGet <code>UiGuideAgent.Desktop</code></td></tr>
+    <tr><td>Blazor, Razor Pages / MVC, .NET MAUI Blazor Hybrid</td><td>NuGet <code>UiGuideAgent.Web</code> + one <code>&lt;script&gt;</code> line</td></tr>
+    <tr><td>React, Vue, Svelte, SvelteKit, Astro, Nuxt, Next.js, Angular</td><td>npm <code>@ui-guide-agent/web</code> + one line of configuration</td></tr>
+    <tr><td>Plain HTML pages</td><td>one <code>&lt;script&gt;</code> line</td></tr>
+    <tr><td>Python (Qt, Tk), Java, Delphi, Electron, any Windows exe</td><td>the Companion, no change to the app</td></tr>
+  </table>
+
+  <h3>The server</h3>
+  <p>One server for all your applications: a .NET tool on your computer for testing, then your company's — Docker image
+    <code>ghcr.io/domitorai/ui-guide-agent-server</code> or a Windows service. If it cannot use your LLM, it tells you why:
+    no key, a refused key, a model the key cannot use, a wrong address.</p>
+
+  <p><a href="https://github.com/DomitorAI/ui-guide-agent">Documentation on GitHub</a> ·
+    <a href="https://www.nuget.org/packages/UiGuideAgent.Desktop">NuGet</a> ·
+    <a href="https://www.npmjs.com/package/@ui-guide-agent/web">npm</a> ·
+    <a href="https://github.com/DomitorAI/ui-guide-agent/discussions">Discussions</a></p>
+
+  <footer><p>Free to use, including commercially. Made by <a href="https://github.com/DomitorAI">DomitorAI</a>.</p></footer>
+</main>
+</body>
+</html>

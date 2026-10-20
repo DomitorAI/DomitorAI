@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mcp-code-editor — connect ChatGPT and web AI chats to your local project (MCP server for Windows)</title>
+<meta name="description" content="mcp-code-editor is a free Windows app: a local MCP server behind an OAuth 2.1 tunnel that lets the agent of ChatGPT or any web AI chat read, edit, build and test the project on your computer.">
+<link rel="canonical" href="https://domitorai.github.io/DomitorAI/mcp-code-editor.html">
+<meta property="og:title" content="mcp-code-editor — your web AI chat, working on your local project">
+<meta property="og:description" content="A local MCP server for Windows: read, search, edit, build and test your project from ChatGPT or any web AI chat.">
+<meta property="og:url" content="https://domitorai.github.io/DomitorAI/mcp-code-editor.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/DomitorAI/mcp-code-editor/main/assets/logo-banner.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "mcp-code-editor",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "A local MCP server for Windows that lets the AI agent of a web chat read, edit, build and test a project on disk, through an OAuth 2.1 protected tunnel.",
+  "url": "https://domitorai.github.io/DomitorAI/mcp-code-editor.html",
+  "downloadUrl": "https://github.com/DomitorAI/mcp-code-editor/releases/latest",
+  "codeRepository": "https://github.com/DomitorAI/mcp-code-editor",
+  "author": { "@type": "Organization", "name": "DomitorAI", "url": "https://github.com/DomitorAI" }
+}
+</script>
+</head>
+<body>
+<main>
+  <nav><a href="./">DomitorAI</a> › mcp-code-editor</nav>
+  <h1>mcp-code-editor</h1>
+  <p class="lead">Connect the AI agent from your web chat to the project on your computer.</p>
+
+  <p><img src="https://raw.githubusercontent.com/DomitorAI/mcp-code-editor/main/assets/logo-banner.png" alt="mcp-code-editor banner"></p>
+
+  <p><strong>mcp-code-editor</strong> is a free Windows desktop application. It runs a local
+    <strong>MCP (Model Context Protocol) server</strong> for one project folder and publishes it through a Cloudflare
+    tunnel protected by <strong>OAuth 2.1 with PKCE</strong>. Paste the endpoint into <strong>ChatGPT</strong> (developer-mode
+    connectors) or any client that accepts custom MCP servers, and the agent works on your real project: no more
+    copy-paste between the chat and your editor, no API key — your chat subscription is enough.</p>
+
+  <h3>What the agent can do</h3>
+  <ul>
+    <li>Read, list and search the whole project; view screenshots and diagrams; read the text of Word and PDF documents.</li>
+    <li>Edit files precisely, create and delete files — in Read-Write mode.</li>
+    <li>Build and test .NET projects, run other commands after your approval.</li>
+    <li>Navigate like an IDE: compiler diagnostics, go-to-definition, find references (C#, Python, JavaScript/TypeScript, HTML, CSS).</li>
+  </ul>
+
+  <h3>You stay in control</h3>
+  <ul>
+    <li>Every command is shown to you for approval (default).</li>
+    <li>Secret files (<code>.env</code>, keys, certificates) are hidden from the agent; <code>.gitignore</code> is respected.</li>
+    <li>Every change is written to an audit log; Read-Only mode for projects you do not trust.</li>
+    <li>The server listens only on <code>127.0.0.1</code>; it is reachable only through the tunnel, while the app runs, after sign-in.</li>
+  </ul>
+
+  <h3>Install (Windows 10/11, PowerShell)</h3>
+  <pre>irm https://raw.githubusercontent.com/DomitorAI/mcp-code-editor/main/scripts/bootstrap.ps1 | iex</pre>
+  <p>No administrator rights, no .NET installation. Then: choose the project folder, press <strong>Start</strong>,
+    paste the <strong>Endpoint</strong> URL into your chat as a connector.</p>
+
+  <p><a href="https://github.com/DomitorAI/mcp-code-editor">Documentation and source on GitHub</a> ·
+    <a href="https://github.com/DomitorAI/mcp-code-editor/releases/latest">Latest release</a> ·
+    <a href="https://github.com/DomitorAI/mcp-code-editor/discussions">Discussions</a></p>
+
+  <footer><p>Free to use, including commercially. Made by <a href="https://github.com/DomitorAI">DomitorAI</a>.</p></footer>
+</main>
+</body>
+</html>
