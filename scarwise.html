@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scarwise — your AI agents make a mistake once, not twice (Claude Code, Codex, Gemini CLI, Cursor, MCP)</title>
+<meta name="description" content="Scarwise is a local safety layer between your AI agents and their tools. When an agent is about to repeat a tool mistake already made on your computer, the call is stopped before it runs and the agent is told what worked. Claude Code, Codex, Gemini CLI, Cursor, Copilot, Kiro, Qwen Code, OpenCode, Claude.ai, ChatGPT.">
+<link rel="canonical" href="https://domitorai.github.io/DomitorAI/scarwise.html">
+<meta property="og:title" content="Scarwise — your AI agents make a mistake once. Not twice.">
+<meta property="og:description" content="A known tool mistake is stopped before it runs, in every AI agent on your computer. No wasted calls, no wasted tokens.">
+<meta property="og:url" content="https://domitorai.github.io/DomitorAI/scarwise.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/DomitorAI/scarwise/main/assets/banner.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Scarwise",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, macOS, Linux (Node.js 22+)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "A local safety layer between AI agents and their tools: when an agent is about to repeat a tool mistake already made on the computer, the call is stopped before it runs and the agent is told what worked.",
+  "url": "https://domitorai.github.io/DomitorAI/scarwise.html",
+  "codeRepository": "https://github.com/DomitorAI/scarwise",
+  "author": { "@type": "Organization", "name": "DomitorAI", "url": "https://github.com/DomitorAI" }
+}
+</script>
+</head>
+<body>
+<main>
+  <nav><a href="./">DomitorAI</a> › Scarwise</nav>
+  <h1>Scarwise</h1>
+  <p class="lead">Your AI agents make a mistake once. Not twice.</p>
+
+  <p><img src="https://raw.githubusercontent.com/DomitorAI/scarwise/main/assets/banner.png" alt="Scarwise banner"></p>
+
+  <p>AI agents call tools all day: they run commands, read files, call MCP servers. When a call fails, the agent finds a
+    form that works — and forgets it by the next conversation. <strong>Scarwise</strong> remembers the mistakes made on
+    your computer: when any of your agents is about to repeat one, the call is stopped before it runs and the agent is
+    told what worked here.</p>
+
+  <h3>Why</h3>
+  <ul>
+    <li><strong>No wasted calls, no wasted tokens:</strong> a mistake already made is stopped before it runs, and you see what it saved.</li>
+    <li><strong>One lesson protects every agent:</strong> a mistake one agent made with a tool is not repeated by the others.</li>
+    <li><strong>Tools that do not work are recognized:</strong> the agent is told the likely cause — a missing sign-in, a service that does not answer, a defect of the server — instead of retrying again and again.</li>
+    <li><strong>One step to install:</strong> <code>npm install -g scarwise</code> connects your agents; <code>npm uninstall -g scarwise</code> leaves nothing behind.</li>
+    <li><strong>Your computer, your data:</strong> what Scarwise learns stays on your computer; only cleaned general patterns go to the shared library (on by default, off with <code>scarwise share off</code>).</li>
+  </ul>
+
+  <h3>Works with</h3>
+  <table>
+    <tr><th>Agent</th><th>How it connects</th></tr>
+    <tr><td>Claude Code, Codex CLI, Gemini CLI, Cursor, Copilot CLI, Kiro CLI, Qwen Code</td><td>hooks, added at install</td></tr>
+    <tr><td>OpenCode</td><td>plugin + local MCP servers, added at install</td></tr>
+    <tr><td>Claude.ai, ChatGPT (MCP connectors)</td><td><code>scarwise proxy</code> in front of your MCP server</td></tr>
+    <tr><td>Agents without hooks</td><td><code>scarwise run -- &lt;agent&gt;</code></td></tr>
+    <tr><td>Your own application (JavaScript/TypeScript, Python)</td><td>SDK <code>guard</code> / <code>@guard</code>, or <code>scarwise api</code></td></tr>
+  </table>
+
+  <p><a href="https://github.com/DomitorAI/scarwise">Documentation on GitHub</a> ·
+    <a href="https://www.npmjs.com/package/scarwise">npm</a> ·
+    <a href="https://pypi.org/project/scarwise/">PyPI</a> ·
+    <a href="https://github.com/DomitorAI/scarwise/discussions">Discussions</a></p>
+
+  <footer><p>Free to use, including commercially. Made by <a href="https://github.com/DomitorAI">DomitorAI</a>.</p></footer>
+</main>
+</body>
+</html>
