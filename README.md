@@ -1,6 +1,6 @@
 # DomitorAI
 
-**Svatantra Dev** (स्वतन्त्र) — building local-first AI tooling.
+**Svatantra Dev** (स्वतन्त्र) — building local-first tools.
 
 ## Projects
 
