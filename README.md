@@ -18,3 +18,6 @@
 - English READMEs and commits
 - every release: full build + test suite (hundreds of tests) in CI before publish
 - automatic release flow — the public repo keeps only the latest version
+- release notes in plain words: what changed for you, not how
+- security issues are reported privately — every repo has a `SECURITY.md`
+- public repos hold the docs and releases; the source stays private
