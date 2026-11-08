@@ -11,6 +11,8 @@
 | [Scarwise](https://github.com/DomitorAI/scarwise) | Your AI agents make a mistake once. Not twice. A local safety layer between AI agents (Claude Code, Codex, Gemini CLI, Cursor, Copilot, Kiro, Qwen Code, OpenCode, Claude.ai, ChatGPT) and their tools: a tool mistake already made on your computer is stopped before it runs, in every agent. One step to install: `npm install -g scarwise`. |
 | [StayLit](https://github.com/DomitorAI/staylit) | Keeps your Windows screen from locking while the PC is idle. Zero setup: finds the lock time (company policy, screen saver, power plan) by itself and moves the mouse 1 pixel and back right before it, only when the PC is idle. No admin rights, single small `.exe`. |
 
+| [Parlanote](https://github.com/DomitorAI/parlanote) | The vocabulary notebook that speaks — for teachers, students and everyone learning a language. Write a word or phrase: it checks the spelling, fills in the translation and says it out loud; test yourself, print a practice sheet, send a word list to your class in any messenger. Windows and Android, 17 languages, works offline. Free, no account, no ads. |
+
 *More projects coming.*
 
 ## How I work
